@@ -26,4 +26,9 @@ export default {
             body: JSON.stringify(interestObj)
         }).then(r => r.json())
     },
+    deleteInterest() {
+        return fetch(`http://localhost:8088/interests/${id}`, {
+            method: "DELETE"
+        })
+    }
 }

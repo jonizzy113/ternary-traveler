@@ -12,6 +12,12 @@ const handlers = {
         const divContainer = document.querySelector("#display-container")
         HTMLBuilder.clearContainer(divContainer)
         apiCall.postInterest(newInterestForm.newInterestObj(name, decscription, cost))
+    },
+    editInterest: () => {
+        const costChange = document.getElementById("editCostInput").value;
+        const reviewChange = document.getElementById("editReviewInput").value;
+        const divContainer = document.querySelector("#display-container")
+        HTMLBuilder.clearContainer(divContainer)
     }
 }
 export default handlers
