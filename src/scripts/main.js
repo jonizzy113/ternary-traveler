@@ -1,5 +1,5 @@
 import build from "../scripts/place"
 
-// place.buildCard()
+build.buildCard()
 let divContainer = document.querySelector("#display-container")
 divContainer.appendChild(build.displayInterest())

@@ -1,6 +1,7 @@
 import place from "../scripts/place"
 import HTMLBuilder from "../scripts/HTMLBuilder";
-import apiCall from "../scripts/apiManager"
+import apiCall from "../scripts/apiManager";
+import newInterestForm from "../scripts/newInterestsForm"
 
 
 const handlers = {
@@ -10,7 +11,7 @@ const handlers = {
         const cost = document.getElementById("costInput").value;
         const divContainer = document.querySelector("#display-container")
         HTMLBuilder.clearContainer(divContainer)
-        apiCall.postInterest(place.newInterestObj(name, decscription, cost))
+        apiCall.postInterest(newInterestForm.newInterestObj(name, decscription, cost))
     }
 }
 export default handlers
